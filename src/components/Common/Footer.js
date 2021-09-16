@@ -1,90 +1,149 @@
-//Hieu
 import React from "react";
 import styled from "styled-components";
 
 const Footer = () => (
-  <>
+  <FooterWrapper>
     <Background></Background>
     <Wrapper>
       <Content>
         <Description>
-          <div style={{ fontSize: "29.2528px", lineHeight: "37px" }}>
+          <DescriptionTitle>
             1-Space
-          </div>
-          <div>
+          </DescriptionTitle>
+          <DescriptionContent>
             Men cannot not live by exchanging articles, but producing them. They
             live by work not trade.
-          </div>
-          <div>
-            Hieu test github
-          </div>
+          </DescriptionContent>
         </Description>
         <Company>
-          <div>Company</div>
-          <div>Local</div>
-          <div>Global</div>
+          <CompanyTitle>Company</CompanyTitle>
+          <CompanyItem>Global Localities</CompanyItem>
+          <CompanyItem>Missions</CompanyItem>
+          <CompanyItem>Careers</CompanyItem>
+          <CompanyItem>Investors</CompanyItem>
+          <CompanyItem>Newsroom</CompanyItem>
         </Company>
         <Partnership>
-          <div>Tasks</div>
-          <div>Profile</div>
+          <PartnershipTitle>Partnership</PartnershipTitle>
+          <PartnershipItem>Tasks</PartnershipItem>
+          <PartnershipItem>Profile</PartnershipItem>
+          <PartnershipItem>Events</PartnershipItem>
+          <PartnershipItem>Services</PartnershipItem>
         </Partnership>
-        <FollowUs>Follow us</FollowUs>
+        <FollowUs>
+          <FollowUsTitle>Follow Us</FollowUsTitle>
+          <FollowUsIconList>
+            <FollowUsIcon src="https://img.favpng.com/14/17/20/facebook-logo-icon-social-icons-rounded-icon-social-icon-png-favpng-AKaimzg9ZMLri3MhZf9xTJcsU.jpg"/>
+            <FollowUsIcon src="https://www.citypng.com/public/uploads/preview/-516141173073bkpm2xhm8.png"/>
+            <FollowUsIcon src="https://www.citypng.com/public/uploads/small/31624153862fh4bl2l4ztignscthrsxnoubjnrz0xy8firjmdxn2oqv5ber7wvqit1wwvacdfxvoyaw1a3scf9ixnw9zm1labunmedoovtk1zaz.png"/>
+          </FollowUsIconList>
+        </FollowUs>
       </Content>
     </Wrapper>
-  </>
+  </FooterWrapper>
 );
 
+const FooterWrapper = styled.div`
+  width: 100%;
+  height: 400px;
+`
+
 const Wrapper = styled.div`
-  height: 500px;
-  max-width: 1152px;
   width: 100%;
   padding-right: 16px;
   padding-left: 16px;
-  margin-right: auto;
-  margin-left: auto;
 `;
 
 const Background = styled.div`
   position: absolute;
   background: linear-gradient(180deg, rgba(253, 91, 47, 0) 0%, #fd5b2f 100%);
   width: 100%;
-  height: 500px;
-  opacity: 0.3;
+  height: 400px;
+  opacity: 0.2;
 `;
 
 const Content = styled.div`
-  height: 100%;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: start;
+  padding: 0 128px;
 `;
 
 const Description = styled.div`
   display: flex;
   flex-direction: column;
   gap: 16px;
-  flex: 3;
+  padding: 0 96px;
+  flex: 2;
 `;
+
+const DescriptionTitle = styled.div`
+  font-size: 30px; 
+  line-height: 37px;
+  margin-bottom: 20px;
+`;
+
+const DescriptionContent = styled.div`
+  font-size: 16px;
+  line-height: 30px;
+  width: 70%;
+`
 
 const Company = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  flex: 2;
+  gap: 25px;
+  flex: 1;
 `;
+
+const CompanyTitle = styled.div`
+  font-size: 20.8948px;
+  color: #FD5B2F;
+`;
+
+const CompanyItem = styled.div`
+  font-size: 16px;
+  color: black;
+`
 
 const Partnership = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  flex: 2;
+  gap: 25px;
+  flex: 1;
+`;
+
+const PartnershipTitle = styled.div`
+  font-size: 20.8948px;
+  color: #FD5B2F;
+`;
+
+const PartnershipItem = styled.div`
+  font-size: 16px;
+  color: black;
 `;
 
 const FollowUs = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  flex: 1;
+  gap: 25px;
+  flex: 2;
 `;
+
+const FollowUsTitle = styled.div`
+  font-size: 20.8948px;
+  color: #FD5B2F;
+`;
+
+const FollowUsIconList = styled.div`
+  display: flex;
+  gap: 4px;
+`;
+
+const FollowUsIcon = styled.img`
+  width: 40px;
+  height: 40px;
+`
 
 export default Footer;

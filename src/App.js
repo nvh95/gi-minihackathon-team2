@@ -7,6 +7,7 @@ import "./styles.css";
 import Cover from "./components/Common/Cover";
 import Services from './components/Services';
 import Member from './components/Member';
+import Benefit from "./components/Common/Benefit";
 
 class App extends Component {
   render() {
@@ -16,6 +17,7 @@ class App extends Component {
         <Cover />
         <Services />
         <Member />
+        <Benefit/>
         <Footer />
         <GlobalStyled />
       </div>

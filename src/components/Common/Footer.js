@@ -15,6 +15,9 @@ const Footer = () => (
             Men cannot not live by exchanging articles, but producing them. They
             live by work not trade.
           </div>
+          <div>
+            Hieu test github
+          </div>
         </Description>
         <Company>
           <div>Company</div>

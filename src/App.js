@@ -5,6 +5,8 @@ import Header from "./components/Common/Header";
 import GlobalStyled from "./components/Common/GlobalStyled";
 import "./styles.css";
 import Cover from "./components/Common/Cover";
+import Services from './components/Services';
+import Member from './components/Member';
 
 class App extends Component {
   render() {
@@ -12,6 +14,8 @@ class App extends Component {
       <div className="App">
         <Header />
         <Cover />
+        <Services />
+        <Member />
         <Footer />
         <GlobalStyled />
       </div>

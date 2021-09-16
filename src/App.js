@@ -5,6 +5,7 @@ import Header from "./components/Common/Header";
 import GlobalStyled from "./components/Common/GlobalStyled";
 import "./styles.css";
 import Cover from "./components/Common/Cover";
+import Services from './components/Services';
 
 class App extends Component {
   render() {
@@ -12,6 +13,7 @@ class App extends Component {
       <div className="App">
         <Header />
         <Cover />
+        <Services />
         <Footer />
         <GlobalStyled />
       </div>

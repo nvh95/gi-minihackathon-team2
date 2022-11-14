@@ -10,7 +10,7 @@
     "react": "16.8.3",
     "react-dom": "16.8.3",
     "react-hot-loader": "4.8.0",
-    "react-scripts": "2.1.8",
+    "react-scripts": "5.0.1",
     "styled-components": "5.3.1"
   },
   "devDependencies": {
